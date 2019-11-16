@@ -1,15 +1,60 @@
-body
+html
 {
-    background-image: url(https://clairemedium.com/wp-content/uploads/2017/12/montagne_neige_skieur_wonderland.jpg);
+    font-family: 'Staatliches', cursive;
+    background-image: linear-gradient(to top right, #19297C, #C6E0FF, #BCAB79, #2978A0, #253031);
     background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
+    height: 100%;
+    z-index: 1;
 }
 
 h1
 {
-    padding-top: 20%;
-    padding-bottom: 20%;
-    color: ghostwhite;
-    text-align: center;
+    color: #19297C;
+    text-align: left;
+    justify-content: space-evenly;
+    width: 10px;
+    padding-top: 2%;
 }
+
+header
+{
+    display: inline-block;
+    width: 100%;
+}
+
+.description
+{
+    padding: 1%;
+    color: ghostwhite;
+    background-color: #19297C;
+    box-shadow: 0 0 3px darkblue;
+    border-radius: 3px;
+    text-align: center;
+    width: 500px;
+}
+
+#menu ul 
+{
+    list-style-type: none;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+#menu ul li
+{
+    display: inline;
+    padding: 0px 15px;
+    color: azure;
+    
+}
+
+.imgmid
+{
+    background-image: url(https://clairemedium.com/wp-content/uploads/2017/12/montagne_neige_skieur_wonderland.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100%;
+    z-index: 2;
+    height: 500px;
+}
+
