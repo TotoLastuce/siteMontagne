@@ -1,27 +1,52 @@
 <!DOCTYPE html>
 <html>
-    <head>
+
+<head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
     <title>White Wild Wonderland</title>
-    </head>
-    <body>
-        <header>
-            <h1>White Wild Wonderland</h1>
-            <span class="description">
+
+    <script>
+
+        // Lise des stations
+        var stations = ['La Foux d\'Allos', 'Auron', 'Isola 2000'];
+
+        /* Au chargement de la page */
+        window.onload = function () {
+
+            /*  Je récupère l'élément dont l'id est "list" */
+            var ul = document.getElementById("list");
+
+            /* pour chaque éléments de mon tableau */
+            stations.forEach(element => {
+                /* Je créé  un élément de type "li" */
+                var li = document.createElement("li");
+
+                /* A cet élément Je lui affecte la valeur que je suis en train de traiter dans mon tableau */
+                li.appendChild(document.createTextNode(element));
+
+                /* J'ajoute cet élément dans l'élément liste que j'ai récupéré */
+                ul.appendChild(li);
+            });
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <h1>White Wild Wonderland</h1>
+        <span class="description">
             Les stations de sports d'hiver dans les Alpes
-            </span>
-        </header>
-        <nav id=menu>
-            <ul>
-                <li>La Foux d'Allos</li>
-                <li>Auron</li>
-                <li>Isola 2000</li>
-            </ul>
-        </nav>
-        <div class="imgmid">
-        </div>
-        
-    </body>
+        </span>
+    </header>
+    <nav id="menu">
+        <ul id="list"></ul>
+    </nav>
+    <div class="imgmid">
+    </div>
+</body>
+
 </html>
